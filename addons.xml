@@ -2,10 +2,9 @@
 <addons>
   <addon id="repository.runtimekodi" name="RuntimeKodi Repository" version="1.0.0" provider-name="zorintv">
     <extension point="xbmc.addon.repository">
-      <info>
-        <checksum>https://zorintv.github.io/RuntimeKodi/addons.xml.md5</checksum>
-        <datadir zip="true">https://zorintv.github.io/RuntimeKodi/zips/</datadir>
-      </info>
+      <info>https://zorintv.github.io/RuntimeKodi/</info>
+      <checksum>https://zorintv.github.io/RuntimeKodi/addons.xml.md5</checksum>
+      <datadir zip="true">https://zorintv.github.io/RuntimeKodi/zip/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary>Repositório RuntimeKodi</summary>
@@ -13,20 +12,24 @@
       <platform>all</platform>
     </extension>
   </addon>
-
   <addon id="plugin.video.runtimezorintv" name="RuntimeZintv" version="1.0.0" provider-name="zorintv">
-    <extension point="xbmc.python.pluginsource">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary>RuntimeZintv</summary>
-      <description>Canis e streams ao vivo</description>
+      <description>Canais e streams ao vivo</description>
       <platform>all</platform>
     </extension>
   </addon>
-
-  <addon id="plugin.video.plutotv" name="PlutoTV BR" version="1.0.0" provider-name="zorintv">
-    <extension point="xbmc.python.pluginsource">
+  <addon id="plugin.video.plutv" name="PlutoTV BR" version="1.0.0" provider-name="zorintv">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
