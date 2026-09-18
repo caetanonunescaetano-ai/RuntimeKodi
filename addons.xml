@@ -2,7 +2,7 @@
 <addons>
   <addon id="repository.runtimekodi" name="RuntimeKodi Repository" version="1.0.0" provider-name="zorintv">
     <extension point="xbmc.addon.repository">
-      <info>https://zorintv.github.io/RuntimeKodi/</info>
+      <info>https://zorintv.github.io/RuntimeKodi/addons.xml</info>
       <checksum>https://zorintv.github.io/RuntimeKodi/addons.xml.md5</checksum>
       <datadir zip="true">https://zorintv.github.io/RuntimeKodi/zip/</datadir>
     </extension>
