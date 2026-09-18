@@ -15,5 +15,9 @@
         <summary lang="pt_BR">Repositório RuntimeKodi</summary>
         <description lang="pt_BR">Repositório com ZorinTV e PlutoTV.</description>
         <platform>all</platform>
+        <assets>
+            <icon>repository.runtimekodi/icon.png</icon>
+            <fanart>repository.runtimekodi/fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
