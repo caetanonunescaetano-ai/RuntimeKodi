@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.runtimezorintv"
-       name="ZorinTV"
-       version="1.0.1"
+<addon id="repository.runtimekodi"
+       name="RuntimeKodi Repository"
+       version="1.0.0"
        provider-name="ZorinTV">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="xbmc.addon" version="19.0.0"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+    <extension point="xbmc.addon.repository" name="RuntimeKodi">
+        <info compressed="false">https://zorintv.github.io/RuntimeKodi/addons.xml</info>
+        <checksum>https://zorintv.github.io/RuntimeKodi/addons.xml.md5</checksum>
+        <datadir zip="true">https://zorintv.github.io/RuntimeKodi/zips/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="pt_BR">ZorinTV - Canais de TV ao vivo</summary>
-        <description lang="pt_BR">ZorinTV com canais de TV ao vivo: Ação, Comédia, Romance, Família, Cine Espanto, Crime, Record News e mais.</description>
+        <summary lang="pt_BR">Repositório RuntimeKodi</summary>
+        <description lang="pt_BR">Repositório com ZorinTV e PlutoTV.</description>
         <platform>all</platform>
-        <license>All Rights Reserved</license>
-        <assets>
-            <icon>runtime.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
     </extension>
 </addon>
