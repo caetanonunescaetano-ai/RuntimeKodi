@@ -50,9 +50,9 @@
             <import addon="xbmc.addon" version="19.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="RuntimeKodi">
-            <info compressed="false">https://caetanonunescaetano-ai.github.io/RuntimeKodi/addons.xml</info>
-            <checksum>https://caetanonunescaetano-ai.github.io/RuntimeKodi/addons.xml.md5</checksum>
-            <datadir zip="true">https://caetanonunescaetano-ai.github.io/RuntimeKodi/zips/</datadir>
+            <info compressed="false">https://zorintv.github.io/RuntimeKodi/addons.xml</info>
+            <checksum>https://zorintv.github.io/RuntimeKodi/addons.xml.md5</checksum>
+            <datadir zip="true">https://zorintv.github.io/RuntimeKodi/zips/</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary lang="pt_BR">Repositório RuntimeKodi</summary>
