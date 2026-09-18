@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="plugin.video.runtimezorintv"
+           name="ZorinTV"
+           version="1.0.1"
+           provider-name="ZorinTV">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="pt_BR">ZorinTV - Canais de TV ao vivo</summary>
+            <description lang="pt_BR">ZorinTV com canais de TV ao vivo: Ação, Comédia, Romance, Família, Cine Espanto, Crime, Record News e mais.</description>
+            <platform>all</platform>
+            <assets>
+                <icon>plugin.video.runtimezorintv/runtime.png</icon>
+                <fanart>plugin.video.runtimezorintv/fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+
+    <addon id="plugin.video.plutotv"
+           name="Pluto TV"
+           version="2.1.0"
+           provider-name="ZorinTV">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="main.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="pt_BR">Canais Pluto TV</summary>
+            <description lang="pt_BR">Addon para assistir aos canais da Pluto TV organizados por categoria.</description>
+            <platform>all</platform>
+            <assets>
+                <icon>plugin.video.plutotv/resources/media/icon.png</icon>
+                <fanart>plugin.video.plutotv/resources/media/fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+
+    <addon id="repository.runtimekodi"
+           name="RuntimeKodi Repository"
+           version="1.0.0"
+           provider-name="ZorinTV">
+        <requires>
+            <import addon="xbmc.addon" version="19.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="RuntimeKodi">
+            <info compressed="false">https://caetanonunescaetano-ai.github.io/RuntimeKodi/addons.xml</info>
+            <checksum>https://caetanonunescaetano-ai.github.io/RuntimeKodi/addons.xml.md5</checksum>
+            <datadir zip="true">https://caetanonunescaetano-ai.github.io/RuntimeKodi/zips/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="pt_BR">Repositório RuntimeKodi</summary>
+            <description lang="pt_BR">Repositório com ZorinTV e PlutoTV.</description>
+            <platform>all</platform>
+            <assets>
+                <icon>repository.runtimekodi/icon.png</icon>
+                <fanart>repository.runtimekodi/fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+</addons>
